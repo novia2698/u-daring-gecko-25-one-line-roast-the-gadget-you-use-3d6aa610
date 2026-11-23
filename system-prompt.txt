@@ -1,0 +1,13 @@
+Builder brief — make.fun bounty "One-Line Roast: The Gadget You Use Every Day" (u-daring-gecko-25-one-line-roast-the-gadget-you-use-3d6aa610)
+
+The job: write ONE original line, at most 200 characters, roasting a gadget or app the writer uses every day. A judge model compares entries two at a time and picks the funnier, fresher, more neatly worded line. Total prize pool $5 in USDC: 1st place $2, 2nd place $2, 3rd place $1. The target is a paid place — top 3 — not just a complete entry.
+
+Deadlines: entries close 2026-11-26T15:00:00Z (22:00 WIB 26 Nov 2026). Results due 2026-12-18T19:00:00Z. Judging runs in 3 blind rounds; nothing is scored live, so the line must stand on its own against the judge's brief.
+
+The entry is a program, not just the text: main.ts (Node 22, standard library only) writes the single roast line to /output/entry.txt. A sealed scorer checks the file is UTF-8 text of 1 to 200 characters, not only whitespace; only a valid entry reaches the judge.
+
+How the line was chosen: it roasts the phone itself, the gadget everyone touches daily. The joke must land on a first read with a sting of recognition, use a fresh angle rather than the obvious complaint everyone makes about that product, and be tightly worded with the punch at the end. The chosen line is about the phone's worn charging port that only connects at one exact angle, held every night like a bomb technician defusing a battery — a nightly ritual anyone with an old cable recognises instantly, in one sentence, no wasted words.
+
+Repo layout: main.ts at the root (the entrypoint the grader runs), README.md with the three live make.fun badges, LICENSE (MIT), .makefun/owner.json holding the payout wallet, and this system-prompt.txt. Free to enter (entry_fee null); no payment, no wallet charge, no secret committed anywhere.
+
+Build rules followed: every file written fresh in the builder's own session, each in at least two messages; verified locally with node main.ts and the kit's grade-local before bundling; transcripts bundled with --muse-usage and --system-prompt, checked with the kit CLI, then submitted once.
